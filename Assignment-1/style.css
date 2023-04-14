@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse;
+    border: solid 1px black;
+    width: 100%;
+
+}
+tr,td{
+    border: solid 1px black;
+}
+tr{
+    background-color: rgb(229, 229, 230);
+    height: 30px;
+    text-align: center;
+}
+th{
+    border: solid 1px black;
+    width: 10%;
+    border: solid 1px black;
+}

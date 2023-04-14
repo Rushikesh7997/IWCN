@@ -1,0 +1,45 @@
+.App {
+  background-color: rgb(43, 86, 110);
+  height: 650px;
+}
+
+.header{
+  height: 80px;
+  background-color: rgb(28, 43, 43);
+  color: white;
+  /* margin-left: 100px; */
+  padding: 0px 50px;
+}
+
+.form_container{
+  margin-top: 15px;
+  text-align: center;
+}
+
+input, textarea{
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px 15px;
+  width: 25%;
+  background-color: bisque;
+  border: none;
+}
+
+textarea{
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer_container{
+  text-align: center;
+  color: white;
+  margin-top: 350px;
+}
+
+.notes_Box{
+  width: 20%;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+button{
+  text-align: left;
+}

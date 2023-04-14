@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function AppendTable() {
+        const data = [
+          "Onboarding Call",
+          "Google Search console access",
+          "Google Analytic Access",
+          "Wireless Access",
+          "Techical Auddit",
+          "Another Tech and symentic access",
+          "Competitor Analysis",
+          "Anchor Text/URL Mapping",
+          "Google Data Studio Report + Local Reporting Suite",
+          "Site level optimiztion",
+          "On Page Optimaztion",
+          "Content Publishing",
+          "Authority Placement",
+          "Review Managment",
+          "Index Links",
+          "Video Recap",
+        ];
+
+        // fetch("http://localhost:3500/data", {
+        //   method: "POST",
+        //   headers: {
+        //     Accept: "application/json, text/plain, */*",
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify({}),
+        // })
+        //   .then((res) => res.json())
+        //   .then((res) => console.log(res));
+
+        return (
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>MONTH1</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((value, index) => {
+                  return (
+                    <tr key={index}>
+                      <td>{value}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<AppendTable />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
